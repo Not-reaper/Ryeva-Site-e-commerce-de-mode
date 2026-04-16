@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ID_Index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Ryeva</title>
+</head>
+    <body>
+        <header>
+            <a href="index.html"><img src="img/logo.jpeg" alt="Logo de l'entreprise"></a> <!-- image et lien à la fois -->
+        </header>
+        <fieldset>
+        <h2>Qui êtes-vous ?</h2>
+        <form action="#" method="post">
+            <label for="prenom">Prénom :</label><!-- Début -->
+            <input type="text" id="prenom" name="prenom" required><!-- Prénom -->
+            <!-- Fin -->
+            
+
+            <label for="Genre">Genre</label><!-- Début -->
+            <select id="Genre" name="Genre" required>
+            <option value="Men">Men</option><!-- choix genre -->    
+            <option value="Women">Women</option>
+            </select><!-- Fin -->
+
+
+            <label for="budget">Budget :</label><!-- Début -->
+            <select id="budget" name="budget" required>
+            <option value="30">300 €</option>    
+            <option value="50">500 €</option><!-- choix budget -->    
+            <option value="70">700 €</option>
+            <option value="100">1000 €</option>
+            </select><!-- Fin -->
+            
+            <label for="taille">Taille :</label><!-- Début -->
+            <select id="taille" name="taille" required>
+            <option value="xs">XS</option>   
+            <option value="S">S</option>    
+            <option value="M">M</option><!-- choix taille -->    
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="2XL">2XL</option>
+            <option value="3XL">3XL</option>
+            </select><!-- Fin -->
+
+
+
+            <label for="taille">Mode</label><!-- Début -->
+            <select id="taille"name="taille" required>
+            <option value="Casual">Casual</option>   
+            <option value="Streetwear">Flashy Rich</option><!-- choix style -->
+            <option value="fashion">fashion</option>
+            <option value="OldMoney">OldMoney</option>
+            <option value="OldMoney">Streetwear de luxe</option>    
+            </select><!-- Fin -->
+
+
+            
+            <div id="cookie-banner">
+                <button onclick="acceptCookies()">Accepter</button>
+                <button onclick="refuseCookies()">Refuser</button>
+            </div>
+            
+            <script>
+                function acceptCookies() {
+                    // Redirection vers la "vraie" page après acceptation
+                    window.location.href = "index.html";
+                }
+            
+                function refuseCookies() {
+                    // Affichage d'une alerte
+                    alert("Vous avez refusé les suggestions.");
+                    
+                    // Redirection vers une autre page (ex: refus.html)
+                    window.location.href = "index.html";
+                }
+            </script>
+            
+
+        </fieldset>
+        </form>
+      
+
+        
+
+
+       
+
+    </body>
+</html>

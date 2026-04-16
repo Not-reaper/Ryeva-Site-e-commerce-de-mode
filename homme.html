@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryeva - Homme</title>
+  <link rel="stylesheet" href="css/homme.css">
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600&display=swap" rel="stylesheet">
+  <script src="js/panier.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="img/logo.jpeg" alt="Logo Ryeva">
+      <h1>Ryeva</h1>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="inscription.html">Inscription</a>
+      <a href="connexion.html">Connexion</a>
+      <a href="panier.html">Panier</a>
+    </nav>
+  </header>
+
+  <main class="homme-page">
+  <aside class="filters">
+    <h3>Filtres</h3>
+
+    <label>Catégorie
+      <select id="filter-category">
+        <option value="all">Tous</option>
+        <option value="T-shirts">T-shirts</option>
+        <option value="Pantalons">Pantalons</option>
+        <option value="Vestes">Vestes</option>
+        <option value="Pulls">Pulls</option>
+        <option value="Jeans">Jeans</option>
+      </select>
+    </label>
+
+    <label>Prix max
+      <input type="range" id="filter-price" min="10" max="200" value="200">
+      <span id="price-value">200€</span>
+    </label>
+
+    <label>Taille
+      <select id="filter-size">
+        <option value="all">Toutes</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+      </select>
+    </label>
+  </aside>
+
+    <section class="products">
+      <div class="product">
+        <img src="img/street wear 1.png" alt="VêtementHomme1">
+        <h4>Veste Classique Homme </h4>
+        <p>79,99€</p>
+        <button class="add-to-cart"
+          data-name="Veste Classique Homme"
+          data-price="79.99"
+          data-img="img/street wear 1.png">
+          Ajouter au panier
+        </button>
+
+      </div>
+      <div class="product">
+        <img src="img/pull.ryeva.png" alt="VêtementHomme2">
+        <h4>Pull RYEVA</h4>
+        <p>59,99€</p>
+        <button class="add-to-cart"
+          data-name="Pull RYEVA"
+          data-price="59.99"
+          data-img="img/pull.ryeva.png">
+          Ajouter au panier
+        </button>
+      </div>
+
+      <div class="product">
+        <img src="img/jean.slim.png" alt="VêtementHomme3">
+        <h4>Jean Slim Bleu </h4>
+        <p>49,99€</p>
+        <button class="add-to-cart"
+          data-name="Jean Slim Bleu"
+          data-price="49.99"
+          data-img="img/jean slim.png">
+          Ajouter au panier
+        </button>
+      </div>
+
+      <div class="product">
+        <img src="img/teeshirt.basique.png" alt="VêtementHomme4">
+        <h4>T-shirt Jaune Basique</h4>
+        <p>19,99€</p>
+        <button class="add-to-cart"
+          data-name="T-shirt Jaune Basique"
+          data-price="19.99"
+          data-img="img/teeshirt.basique.png">
+          Ajouter au panier
+        </button>
+      </div>
+
+      <div class="product">
+        <img src="img/blouson.leger (1).png" alt="VêtementHomme5">
+        <h4>Blouson Léger Vert Olive </h4>
+        <p>69,99€</p>
+        <button class="add-to-cart"
+          data-name="Blouson Léger Vert Olive"
+          data-price="69.99"
+          data-img="img/blouson.leger (1).png">
+          Ajouter au panier
+        </button>
+      </div>
+      
+      <div class="product">
+        <img src="img/Pantalon_Cargo.jpg" alt="VêtementHomme6">
+        <h4>Pantalon Cargo Vert Olive </h4>
+        <p>54,99€</p>
+        <button class="add-to-cart"
+          data-name="Pantalon Cargo Vert Olive"
+          data-price="54,99"
+          data-img="img/Pantalon_Cargo.jpg">
+          Ajouter au panier
+        </button>
+      </div>
+
+    </section>
+  </main>
+
+   <footer>
+    &copy; 2025 Ryeva. Tous droits réservés.
+  </footer>
+
+</body>
+</html>

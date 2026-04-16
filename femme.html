@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryeva - Femme</title>
+  <link rel="stylesheet" href="css/femme.css">
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600&display=swap" rel="stylesheet">
+  <script src="js/panier.js" defer></script> <!-- Ajout du script -->
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="img/logo.jpeg" alt="Logo Ryeva">
+      <h1>Ryeva</h1>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="inscription.html">Inscription</a>
+      <a href="connexion.html">Connexion</a>
+      <a href="panier.html">Panier</a>
+    </nav>
+  </header>
+
+  <main class="femme-page">
+    <aside class="filters">
+      <h3>Filtres</h3>
+      <label>Catégorie
+        <select>
+          <option>Tous</option>
+          <option>Robes</option>
+          <option>Tops</option>
+          <option>Jupes</option>
+        </select>
+      </label>
+      <label>Prix max
+        <input type="range" min="10" max="200" value="100">
+      </label>
+    </aside>
+
+    <section class="products">
+      <div class="product">
+        <img src="img/robe.été.png" alt="Robe d'Été Orange Fleurie Blanc">
+        <h4>Robe d'Été Orange Fleurie Blanc</h4>
+        <p>39,99€</p>
+        <button class="add-to-cart"
+          data-name="Robe d'Été Orange Fleurie Blanc"
+          data-price="39.99"
+          data-img="img/robe.été.png">Ajouter au panier</button>
+      </div>
+
+      <div class="product">
+        <img src="img/articles 6.avif" alt="Top Dentelle Beige">
+        <h4>Top Dentelle Beige</h4>
+        <p>24,99€</p>
+        <button class="add-to-cart"
+          data-name="Top Dentelle Beige"
+          data-price="24.99"
+          data-img="img/articles 6.avif">Ajouter au panier</button>
+      </div>
+
+      <div class="product">
+        <img src="img/jupe.fleuri.png" alt="Jupe Fleurie">
+        <h4>Jupe Fleurie</h4>
+        <p>29,99€</p>
+        <button class="add-to-cart"
+          data-name="Jupe Fleurie"
+          data-price="29.99"
+          data-img="img/jupe.fleuri.png">Ajouter au panier</button>
+      </div>
+
+      <div class="product">
+        <img src="img/Veste_Légère.jpg" alt="Veste Femme Marron Clair">
+        <h4>Veste Femme</h4>
+        <p>49,99€</p>
+        <button class="add-to-cart"
+          data-name="Veste Femme"
+          data-price="49.99"
+          data-img="img/Veste_Légère.jpg">Ajouter au panier</button>
+      </div>
+
+      <div class="product">
+        <img src="img/jean.slim.png" alt="Jean Bleu Marine">
+        <h4>Jean Bleu Marine</h4>
+        <p>44,99€</p>
+        <button class="add-to-cart"
+          data-name="Jean Bleu Marine"
+          data-price="44.99"
+          data-img="img/jean.slim.png">Ajouter au panier</button>
+      </div>
+
+      <div class="product">
+        <img src="img/article 9.avif" alt="Top Bandeau Rose Bonbon">
+        <h4>Top Bandeau Rose Bonbon</h4>
+        <p>19,99€</p>
+        <button class="add-to-cart"
+          data-name="Top Bandeau Rose Bonbon"
+          data-price="19.99"
+          data-img="img/article 9.avif">Ajouter au panier</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Ryeva. Tous droits réservés.
+  </footer>
+</body>
+</html>

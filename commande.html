@@ -1,0 +1,74 @@
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commande - Ryeva</title>
+  <link rel="stylesheet" href="css/commande.css">
+  
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="img/logo.jpeg" alt="Logo Ryeva">
+      <h1>Ryeva</h1>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="panier.html">Panier</a>
+      <a href="connexion.html">Connexion</a>
+    </nav>
+  </header>
+  
+  <main>
+    <h2>Résumé de votre commande</h2>
+
+    <!-- Section pour afficher les articles -->
+    <section id="order-summary">
+      <!-- Les articles seront ajoutés dynamiquement via JavaScript -->
+    </section>
+
+    <h3 id="order-total">Total : 0.00€</h3>
+
+    <!-- Moyens de paiement -->
+    <section class="payment-method">
+      <h3>Moyen de paiement</h3>
+      <label for="credit-card">
+        <input type="radio" name="payment-method" id="credit-card" value="credit-card" checked> Carte de crédit
+      </label>
+      <label for="paypal">
+        <input type="radio" name="payment-method" id="paypal" value="paypal"> PayPal
+      </label>
+
+      <!-- Images des moyens de paiement -->
+      <div class="payment-images">
+        <img src="img/cartepaiement.jpeg" alt="Carte de Crédit" class="payment-image">
+      </div>
+    </section>
+
+    <!-- Moyens de livraison -->
+    <section class="delivery-method">
+      <h3>Moyen de livraison</h3>
+      <label for="standard-delivery">
+        <input type="radio" name="delivery-method" id="standard-delivery" value="standard" checked> Livraison standard (3-5 jours)
+      </label>
+      <label for="express-delivery">
+        <input type="radio" name="delivery-method" id="express-delivery" value="express"> Livraison express (1-2 jours)
+      </label>
+
+      <!-- Images des moyens de livraison -->
+      <div class="delivery-images">
+        <img src="img/livraison.jpeg" alt="Livraison Standard" class="delivery-image">
+      </div>
+    </section>
+
+    <!-- Bouton de confirmation de la commande -->
+    <button id="confirm-order">Confirmer la commande</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ryeva. Tous droits réservés.</p>
+  </footer>
+
+  <script src="js/commande.js"></script>
+</body>
+</html>
